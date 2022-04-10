@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <cstdlib>  //требование к задаче
 #include <Windows.h>
 
 using namespace std;
@@ -118,5 +119,6 @@ int main()
         file.close();
         cout << "\nПродолжить? (д/н) "; //д - да, н - нет
         cin >> command;
+        system("pause"); //требование к задаче
     }
 }
